@@ -13,22 +13,27 @@ import {
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-export function SheetDemo() {
+
+//HamBurger Componnet Function
+export function HamBurger() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline"><RxHamburgerMenu size={20} />
+        {/* HamBurger Button*/}
+        <Button className="flex lg:hidden ml-20 bg-green-950 hover:bg-green-950 px-3 py-auto">
+            <RxHamburgerMenu size={26} color="white"  />
         </Button>
       </SheetTrigger>
       <SheetContent>
           <div className="grid gap-4 py-4">
-          <div className="grid grid-rows-4 items-center gap-4 text-lg p-4 font-semibold">
-           <Link href="/" className="bg-gray-100/50">Home</Link>
-           <Link href="/" className="bg-gray-100/50">About</Link>
-           <Link href="/" className="bg-gray-100/50">Visit</Link>
-           <Link href="/" className="bg-gray-100/50">Study</Link>
-           <Link href="/" className="bg-gray-100/50">Life</Link>
-           <Link href="/" className="bg-gray-100/50">Contact us</Link>
+            {/* HamBurger Menu Navigation Options */}
+          <div className="grid grid-rows-4 items-center gap-4 text-lg text-green-950 p-1 font-semibold">
+           <Link href="/" className="hover:bg-gray-100/50 p-2">Home</Link>
+           <Link href="/" className="hover:bg-gray-100/50 p-2">About</Link>
+           <Link href="/" className="hover:bg-gray-100/50 p-2">Visit</Link>
+           <Link href="/" className="hover:bg-gray-100/50 p-2">Study</Link>
+           <Link href="/" className="hover:bg-gray-100/50 p-2">Life</Link>
+           <Link href="/" className="hover:bg-gray-100/50 p-2">Contact us</Link>
 
         </div></div>
       </SheetContent>
