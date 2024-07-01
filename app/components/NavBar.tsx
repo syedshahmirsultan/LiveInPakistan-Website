@@ -10,7 +10,7 @@ const NavBar = () => {
 
             <div>
         {/*Logo */}
-<h1 className="text-white text-2xl md:text-3xl ml-4 font-semibold hover:text-green-900  tracking-widest ">LiveInPakistan</h1>
+<h1 className="text-white text-2xl md:text-3xl ml-4 font-semibold  tracking-widest ">LiveInPakistan</h1>
             </div>
             {/*NavBar Navigation Options */}
             <div className='hidden lg:flex lg:gap-x-6 xl:gap-x-10 text-white font-semibold text-xl relative p-1'>
