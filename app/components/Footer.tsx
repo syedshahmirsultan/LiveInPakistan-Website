@@ -5,7 +5,7 @@ import { BsFacebook, BsLinkedin } from 'react-icons/bs';
 
 const Footer = () => {
     return (
-        <footer className="bg-green-950 text-white mt-40">
+        <footer className="bg-green-950 text-white mt-60">
             <div className="container mx-auto px-6 py-12 md:py-16">
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     {/* Logo */}
