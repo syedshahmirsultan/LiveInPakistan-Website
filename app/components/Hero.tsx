@@ -5,27 +5,12 @@ import Image from 'next/image';
 
 // Images Url Array
 const imagesUrl = [
-  "/images/swat.png",
-  "/images/skardu.png",
-  "/images/ansoolake.png",
-  "/images/damanekoh.png",
-  "/images/deosaiNationalPark.png",
-  "/images/Derawarfort.png",
-  "/images/fairyMeadows.png",
-  "/images/fortMunro.png",
-  "/images/hunzavalley.png",
-  "/images/kalashValley.png",
-  "/images/katarpur.png",
-  "/images/katasRajTemple.png",
-  "/images/khanpurdam.png",
-  "/images/kundmalirbeach.png",
-  "/images/lahorefort.png",
-  "/images/maklithatta.png",
-  "/images/monument.png",
-  "/images/naltharValley.png",
-  "/images/naranKhagan.png",
-  "/images/neelam.png",
-  "/images/rawalakot.png"
+ "/images/image1.png",
+ "/images/image1.png",
+ "/images/image1.png",
+ "/images/image1.png",
+ "/images/students.png",
+
 ];
 
 // Hero Section Function
@@ -47,7 +32,7 @@ const Hero = () => {
       <div key={currentImageIndex} className='relative w-full h-[500px]'>{/*imagesUrl[currentImageIndex]*/}
         <Image
           alt="Hero Image"
-          src={"/images/hunzavalley.png"} 
+          src={imagesUrl[currentImageIndex]} 
           width={1000}
           height={500}
           className='object-cover w-full h-[500px]'
