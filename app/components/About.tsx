@@ -5,9 +5,9 @@ import React from 'react';
 const About = () => {
     return (
         <section className=' w-full mt-24'>
-            <div className='p-4 md:p-8 space-y-3 md:space-y-8'>
+            <div className='p-4 md:p-8 space-y-12 md:space-y-8'>
                 {/* Heading*/}
-       <Link href="/about"> <h1 className="text-green-900 font-extrabold text-4xl md:text-6xl text-center">
+       <Link href="/about"> <h1 className="text-green-900 font-extrabold text-5xl md:text-7xl text-center">
      About
         </h1></Link>
         {/* Text*/}

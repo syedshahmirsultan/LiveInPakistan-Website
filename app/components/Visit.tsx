@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import Image from 'next/image';
 //Visit Section Function
 const Visit = () => {
 
@@ -131,13 +131,30 @@ const Visit = () => {
     //Return Statement
     return (
         <section className=' w-full mt-24'>
-            <div className='p-4 md:p-8 space-y-3 md:space-y-8'>
+            <div className='p-4 md:pt-4 space-y-12 md:space-y-8'>
                 {/* Heading */}
-             <Link href="/about"> <h1 className="text-green-950 font-extrabold text-4xl md:text-6xl text-center">
+             <Link href="/visit"> <h1 className="text-green-950 mb-20 font-extrabold text-5xl md:text-7xl text-center">
      Visit
-        </h1></Link></div>
+        </h1></Link>
+       {/* VisitSitesData Array Mapping*/} 
+        <div className="w-full  md:max-w-7xl md:mx-auto grid grid-cols-1 gap-y-4 md:grid-cols-4 md:gap-x-4">
+           {
+            visitSitesData.map((item,index)=>{
+                return (
+                 <Link href="/visit"  key={index} ><div className="w-full h-56 relative">
+                    <Image src={item.imageUrl} alt={item.name} layout="fill" className="relative"/>
+                    <div className='absolute bg-black/40 hover:bg-black/0 top-0 bottom-0 left-0 right-0 inset-0'>
+                      <p className="text-2xl font-bold text-white flex justify-center mt-20 items-center">{item.name}</p>
+                      <p className='text-lg font-semibold text-white flex justify-center  mt-2'>{item.location}</p>  </div>
+                    </div></Link> 
+                )
+            })
+           } </div>
+            </div>
         </section>
     );
 }
 
 export default Visit;
+
+
