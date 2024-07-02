@@ -37,7 +37,7 @@ const Hero = () => {
         />
       </div>
       <div className='absolute w-full h-full inset-20 md:inset-0 bg-black/30  bottom-0 top-0 left-0 right-0   text-center'>
-<h1 className="text-4xl md:text-9xl font-extrabold text-white mt-20 md:mt-48 z-50">PAKISTAN</h1>
+<h1 className="text-4xl md:text-9xl font-extrabold text-white mt-20 md:mt-40 z-50">PAKISTAN</h1>
 <p className='text-white text-2xl md:text-5xl font-medium z-50'>Your adventure begins here</p>
       </div>
     </div>

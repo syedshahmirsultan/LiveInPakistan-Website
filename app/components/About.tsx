@@ -4,7 +4,7 @@ import React from 'react';
 //About Section Function
 const About = () => {
     return (
-        <section className=' w-full mt-48'>
+        <section className=' w-full mt-40'>
             <div className='p-4 md:p-8 space-y-12 md:space-y-8'>
                 {/* Heading */}
        <Link href="/about"> <h1 className="text-green-900 font-extrabold text-5xl md:text-7xl text-center">

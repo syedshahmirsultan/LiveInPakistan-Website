@@ -5,7 +5,6 @@ import About from "./components/About";
 import Visit from "./components/Visit";
 import Study from "./components/Study";
 import Life from "./components/Life";
-import Footer from "./components/Footer";
 
 //Main Component
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       <Visit/>
       <Study/>
       <Life/>
-      <Footer/>
     </main>
   );
 }
