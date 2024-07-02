@@ -20,7 +20,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentImageIndex((i: number) => (i == imagesUrl.length - 1 ? 0 : i + 1));
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, [currentImageIndex]);

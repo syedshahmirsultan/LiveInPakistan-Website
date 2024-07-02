@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Visit from "./components/Visit";
 import Study from "./components/Study";
+import Life from "./components/Life";
 
 //Main Component
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Visit/>
       <Study/>
+      <Life/>
     </main>
   );
 }
