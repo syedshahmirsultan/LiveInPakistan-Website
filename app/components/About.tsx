@@ -7,13 +7,13 @@ const About = () => {
         <section className=' w-full mt-40'>
             <div className='p-4 md:p-8 space-y-12 md:space-y-8'>
                 {/* Heading */}
-       <Link href="/about"> <h1 className="text-green-900 font-extrabold text-5xl md:text-7xl text-center">
+       <Link href="/About"> <h1 className="text-green-900 font-extrabold text-5xl md:text-7xl text-center">
      About
         </h1></Link>
         {/* Text */}
-        <p className=" text-lg text-green-800 break-words"><span className='font-bold'>Pakistan</span>,[e] officially the Islamic Republic of Pakistan,[f] is a country in South Asia. It is the fifth-most populous country, with a population of over 241.5 million, having the second-largest Muslim population as of 2023.[8] Islamabad is the nation's capital, while Karachi is its largest city and financial centre. Pakistan is the 33rd-largest country by area and the ninth-largest in Asia. Bounded by the Arabian Sea on the south, the Gulf of Oman on the southwest, and the Sir Creek on the southeast, it shares land borders with India to the east; Afghanistan to the west; Iran to the southwest; and China to the northeast. It shares a maritime border with Oman in the Gulf of Oman, and is separated from Tajikistan in the northwest by Afghanistan's narrow Wakhan Corridor.</p>
+        <p className=" text-lg text-green-800 break-words"><span className='font-bold'>Pakistan</span>, officially the Islamic Republic of Pakistan, is a country in South Asia. It is the fifth-most populous country, with a population of over 241.5 million, having the second-largest Muslim population as of 2023. Islamabad is the nation's capital, while Karachi is its largest city and financial centre. Pakistan is the 33rd-largest country by area and the ninth-largest in Asia. Bounded by the Arabian Sea on the south, the Gulf of Oman on the southwest, and the Sir Creek on the southeast, it shares land borders with India to the east; Afghanistan to the west; Iran to the southwest; and China to the northeast. It shares a maritime border with Oman in the Gulf of Oman, and is separated from Tajikistan in the northwest by Afghanistan's narrow Wakhan Corridor.</p>
         {/* Button */}
-        <Link href="/about" className=' flex justify-center'><button className=" mt-6 md:mt-3 flex justify-center px-6 py-3 rounded-lg text-sm font-semibold text-white hover:bg-green-900 bg-green-950 animate-bounce duration-500">Read More</button></Link>
+        <Link href="/About" className=' flex justify-center'><button className=" mt-6 md:mt-3 flex justify-center px-6 py-3 rounded-lg text-sm font-semibold text-white hover:bg-green-900 bg-green-950 animate-bounce duration-500">Read More</button></Link>
         </div>
         </section>
     );

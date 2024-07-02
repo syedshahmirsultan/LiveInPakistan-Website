@@ -25,10 +25,10 @@ const Footer = () => {
                 {/* Navigation Links */}
                 <nav className="flex flex-col md:flex-row items-center justify-center mt-8">
                     <Link href="/" className="mx-2 md:mx-4 hover:text-gray-200">Home</Link>
-                    <Link href="/about" className="mx-2 md:mx-4 hover:text-gray-200">About</Link>
-                    <Link href="/study" className="mx-2 md:mx-4 hover:text-gray-200">Study</Link>
-                    <Link href="/visit" className="mx-2 md:mx-4 hover:text-gray-200">Visit</Link>
-                    <Link href="/partnership" className="mx-2 md:mx-4 hover:text-gray-200">Partnership</Link>
+                    <Link href="/About" className="mx-2 md:mx-4 hover:text-gray-200">About</Link>
+                    <Link href="/Study" className="mx-2 md:mx-4 hover:text-gray-200">Study</Link>
+                    <Link href="/Visit" className="mx-2 md:mx-4 hover:text-gray-200">Visit</Link>
+                    <Link href="/Contact" className="mx-2 md:mx-4 hover:text-gray-200">Partnership</Link>
                 </nav>
                 {/* Legal Text */}
                 <div className="mt-8 text-center md:text-left">

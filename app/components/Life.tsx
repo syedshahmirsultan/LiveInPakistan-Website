@@ -30,7 +30,7 @@ const Life = () => {
         <section className=' w-full mt-40'>
         <div className='p-4 md:pt-4 space-y-8 md:space-y-8'>
             {/* Heading */}
-         <Link href="/life"> <h1 className="text-green-950 mb-20 font-extrabold text-5xl md:text-7xl text-center">
+         <Link href="/Life"> <h1 className="text-green-950 mb-20 font-extrabold text-5xl md:text-7xl text-center">
  Life
     </h1></Link>
     {/* Mapping of lifeImagesData Array*/}
@@ -38,7 +38,7 @@ const Life = () => {
     {
         lifeImagesData.map((item,index)=> {
             return (
-             <Link href="/life" key={index}>  <div className="w-full h-96 relative">
+             <Link href="/Life" key={index}>  <div className="w-full h-96 relative">
             <Image src={item.imagesUrl} alt={item.name} layout="fill" className="relative"/>
             <div className='absolute top-0 bottom-0 left-0 right-0 inset-0  bg-black/40 hover:bg-black/0 '>
          <text className='text-5xl text-gray-100 font-extrabold tracking-wider flex justify-center mt-48 '>{item.name}</text>

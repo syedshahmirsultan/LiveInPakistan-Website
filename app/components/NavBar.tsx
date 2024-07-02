@@ -10,26 +10,26 @@ const NavBar = () => {
 
             <div>
         {/*Logo */}
-<h1 className="text-white text-2xl md:text-3xl ml-4 font-semibold  tracking-widest ">LiveInPakistan</h1>
-            </div>
+<Link href="/"><h1 className="text-white text-2xl md:text-3xl ml-4 font-semibold  tracking-widest ">LiveInPakistan</h1>
+</Link> </div>
             {/*NavBar Navigation Options */}
             <div className='hidden lg:flex lg:gap-x-6 xl:gap-x-10 text-white font-semibold text-xl relative p-1'>
         <Link href="/" className=' relative group overflow-hidden'>Home
         <span className='w-full h-[4px] bg-white absolute overflow-hidden inline-block translate-x-[100%] left-0 bottom-0 group-focus:translate-x-0 group-hover:translate-x-0 transition-transform duration-200'></span>
         </Link>
-        <Link href="/" className=' relative group overflow-hidden'>About
+        <Link href="/About" className=' relative group overflow-hidden'>About
         <span className='w-full h-[4px] bg-white absolute overflow-hidden inline-block translate-x-[100%] left-0 bottom-0 group-focus:translate-x-0 group-hover:translate-x-0 transition-transform duration-200'></span>
         </Link>
-        <Link href="/" className=' relative group overflow-hidden'>Visit
+        <Link href="/Visit" className=' relative group overflow-hidden'>Visit
         <span className='w-full h-[4px] bg-white absolute overflow-hidden inline-block translate-x-[100%] left-0 bottom-0 group-focus:translate-x-0 group-hover:translate-x-0 transition-transform duration-200'></span>
         </Link>
-        <Link href="/" className=' relative group overflow-hidden'>Study
+        <Link href="/Study" className=' relative group overflow-hidden'>Study
         <span className='w-full h-[4px] bg-white absolute overflow-hidden inline-block translate-x-[100%] left-0 bottom-0 group-focus:translate-x-0 group-hover:translate-x-0 transition-transform duration-200'></span>
         </Link>
-        <Link href="/" className=' relative group overflow-hidden'>Life
+        <Link href="/Life" className=' relative group overflow-hidden'>Life
         <span className='w-full h-[4px] bg-white absolute overflow-hidden inline-block translate-x-[100%] left-0 bottom-0 group-focus:translate-x-0 group-hover:translate-x-0 transition-transform duration-200'></span>
         </Link>
-        <Link href="/" className=' relative group overflow-hidden'>Contact us
+        <Link href="/Contact" className=' relative group overflow-hidden'>Contact
         <span className='w-full h-[4px] bg-white absolute overflow-hidden inline-block translate-x-[100%] left-0 bottom-0 group-focus:translate-x-0 group-hover:translate-x-0 transition-transform duration-200'></span>
         </Link>
         </div>

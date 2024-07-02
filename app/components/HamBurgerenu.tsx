@@ -29,11 +29,11 @@ export function HamBurger() {
             {/* HamBurger Menu Navigation Options */}
           <div className="grid grid-rows-4 items-center gap-4 text-lg text-green-950 p-1 font-semibold">
            <Link href="/" className="hover:bg-gray-100/50 p-2">Home</Link>
-           <Link href="/" className="hover:bg-gray-100/50 p-2">About</Link>
-           <Link href="/" className="hover:bg-gray-100/50 p-2">Visit</Link>
-           <Link href="/" className="hover:bg-gray-100/50 p-2">Study</Link>
-           <Link href="/" className="hover:bg-gray-100/50 p-2">Life</Link>
-           <Link href="/" className="hover:bg-gray-100/50 p-2">Contact us</Link>
+           <Link href="/About" className="hover:bg-gray-100/50 p-2">About</Link>
+           <Link href="/Visit" className="hover:bg-gray-100/50 p-2">Visit</Link>
+           <Link href="/Study" className="hover:bg-gray-100/50 p-2">Study</Link>
+           <Link href="/Life" className="hover:bg-gray-100/50 p-2">Life</Link>
+           <Link href="/Contact" className="hover:bg-gray-100/50 p-2">Contact</Link>
 
         </div></div>
       </SheetContent>
