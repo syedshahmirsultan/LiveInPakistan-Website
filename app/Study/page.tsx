@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import Image from 'next/image';
 
 
 const universitiesData = [
@@ -310,16 +310,35 @@ const universitiesData = [
 ]
 
 
-
+//Study Page Function
 const Study = () => {
     return (
-        <section className=' w-full mt-40'>
+        <main className=' w-full mt-40'>
         <div className='p-4 md:p-8 gap-y-12 md:gap-y-8'>
             {/* Heading */}
    <Link href="/Study"> <h1 className="text-green-900 font-extrabold text-4xl md:text-7xl text-center">
  Top Universities In Pakistan
     </h1></Link>
-    <p className="text-lg mt-12 text-green-950 break-words">Pakistan has universities ranked among the world's top 1000, such as NUST (400), PIEAS (375), LUMS (651-700), and Aga Khan University (201-250). These institutions are known for quality education and research. The Higher Education Commission (HEC) is working to improve educational standards across the country. Education in Pakistan is progressing, with a focus on technology and innovation. These universities play a crucial role in the country's development and offer opportunities for students to excel globally.</p></div></section>
+    <p className="text-lg mt-12 text-green-950 break-words">Pakistan has universities ranked among the world's top 1000, such as NUST (400), PIEAS (375), LUMS (651-700), and Aga Khan University (201-250). These institutions are known for quality education and research. The Higher Education Commission (HEC) is working to improve educational standards across the country. Education in Pakistan is progressing, with a focus on technology and innovation. These universities play a crucial role in the country's development and offer opportunities for students to excel globally.</p>
+   {/* Mapping of universitiesData Array*/}
+    <div className="mt-20">
+{
+    universitiesData.map((item,index)=>{
+        return (
+            <div key={index} className="mt-24 md:mt-40 gap-y-8 md:gap-y-12">
+ <h2 className="text-4xl md:text-5xl font-extrabold text-center text-green-900 ">{item.name}</h2>
+ <div className="flex flex-col gap-y-8 md:justify-between md:flex-row mt-8 md:mt-12">
+ <div className='flex flex-col gap-y-8'>
+    <p className="text-lg text-green-950 break-words w-[90%] p-2 md:p-8">{item.text}</p>
+    <Link href={item.href}> <button className="bg-green-950 hover:text-green-900 animate-bounce px-6 py-3 text-center font-semibold text-white">Visit Site</button></Link>
+        </div>
+       <Image src={item.imageUrl} alt={item.name} width={500} height={400} className="object-fit rounded-md"/>
+            </div></div> 
+        )
+    })
+}
+    </div>
+    </div></main>
     );
 }
 
