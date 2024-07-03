@@ -135,7 +135,7 @@ const Visit = () => {
         <section className=' w-full mt-40'>
             <div className='p-4 md:p-8 gap-y-12 md:gap-y-8'>
                 {/* Heading */}
-       <Link href="/About"> <h1 className="text-green-900 font-extrabold text-5xl md:text-7xl text-center">
+       <Link href="/Visit"> <h1 className="text-green-900 font-extrabold text-4xl md:text-7xl text-center">
      Places To Visit In Pakistan
         </h1></Link>
         <p className="text-lg mt-12 text-green-950 break-words">
@@ -146,10 +146,10 @@ const Visit = () => {
         {
             visitSitesInformation.map((item,index)=> {
                 return (
-            <div key={index} className="mt-40 gap-y-8 md:gap-y-12">
-           <h2 className="text-3xl md:text-5xl font-extrabold text-center text-green-900 ">{item.name}</h2>
+            <div key={index} className="mt-24 md:mt-40 gap-y-8 md:gap-y-12">
+           <h2 className="text-4xl md:text-5xl font-extrabold text-center text-green-900 ">{item.name}</h2>
            <div className="flex flex-col gap-y-8 md:justify-between md:flex-row mt-8 md:mt-12">
-            <p className="text-lg text-green-950 break-words w-[90%] p-8">{item.text}</p>
+            <p className="text-lg text-green-950 break-words w-[90%] p-2 md:p-8">{item.text}</p>
             <Image src={item.imageUrl} alt={item.name} width={500} height={400} className="object-fit rounded-md"/>
             </div></div>
                 )

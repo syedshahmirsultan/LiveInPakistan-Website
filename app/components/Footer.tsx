@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* Navigation Links */}
-                <nav className="flex flex-col md:flex-row items-center justify-center mt-8">
+                <nav className="flex flex-col md:flex-row items-center justify-center gap-y-1 mt-8">
                     <Link href="/" className="mx-2 md:mx-4 hover:text-gray-200">Home</Link>
                     <Link href="/About" className="mx-2 md:mx-4 hover:text-gray-200">About</Link>
                     <Link href="/Study" className="mx-2 md:mx-4 hover:text-gray-200">Study</Link>
