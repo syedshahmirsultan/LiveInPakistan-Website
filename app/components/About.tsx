@@ -5,7 +5,7 @@ import React from 'react';
 const About = () => {
     return (
         <section className=' w-full mt-40'>
-            <div className='p-4 md:p-8 space-y-12 md:space-y-8'>
+            <div className='p-4 md:p-8 gap-y-12 md:gap-y-8'>
                 {/* Heading */}
        <Link href="/About"> <h1 className="text-green-900 font-extrabold text-5xl md:text-7xl text-center">
      About

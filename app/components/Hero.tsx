@@ -27,7 +27,7 @@ const Hero = () => {
 
   return (
     <div className='relative '>
-      <div key={currentImageIndex} className='relative  w-full h-56 md:h-[580px]'>
+      <div key={currentImageIndex} className='relative  w-full h-full md:h-[580px]'>
         <Image
           alt="Hero Image"
           src={imagesUrl[currentImageIndex]} 

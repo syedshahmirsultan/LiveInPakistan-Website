@@ -38,10 +38,10 @@ const Life = () => {
     {
         lifeImagesData.map((item,index)=> {
             return (
-             <Link href="/Life" key={index}>  <div className="w-full h-96 relative">
+             <Link href="/Life" key={index}>  <div className="w-full h-80 relative">
             <Image src={item.imagesUrl} alt={item.name} layout="fill" className="relative"/>
             <div className='absolute top-0 bottom-0 left-0 right-0 inset-0  bg-black/40 hover:bg-black/0 '>
-         <text className='text-5xl text-gray-100 font-extrabold tracking-wider flex justify-center mt-48 '>{item.name}</text>
+         <text className='text-5xl text-gray-100 font-bold md:font-extrabold tracking-wider flex justify-center mt-40 '>{item.name}</text>
             </div>
                 </div></Link> 
             )
