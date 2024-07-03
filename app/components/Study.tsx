@@ -11,7 +11,7 @@ const Study = () => {
      Study
         </h1></Link>
         {/* Text */}
-        <p className=" text-lg text-green-800 break-words md:pr-8 md:pl-8">Higher education in Pakistan expanded significantly following the country’s independence from Britain in 1947. Today the system is overseen by the Higher Education Commission of Pakistan (HEC), which oversees funding, research outputs, and teaching quality. The commission recognizes 174 universities in the country, including both private and public institutions, and some which are military or vocational in focus. You don’t need to worry about learning Urdu (the national language), as all teaching at universities in Pakistan is conducted in English.</p>
+        <p className=" text-lg text-green-800 break-words md:pr-8 md:pl-8">Pakistan has universities ranked among the world's top 1000, such as NUST (400), PIEAS (375), LUMS (651-700), and Aga Khan University (201-250). These institutions are known for quality education and research. The Higher Education Commission (HEC) is working to improve educational standards across the country. Education in Pakistan is progressing, with a focus on technology and innovation. These universities play a crucial role in the country's development and offer opportunities for students to excel globally. You don’t need to worry about learning Urdu (the national language), as all teaching at most of the universities in Pakistan is conducted in English.</p>
         {/* Button */}
         <Link href="/Study" className=' flex justify-center'><button className=" mt-6 md:mt-3 flex justify-center px-6 py-3 rounded-lg text-sm font-semibold text-white hover:bg-green-900 bg-green-950 animate-bounce duration-500">Read More</button></Link>
         </div></section>
