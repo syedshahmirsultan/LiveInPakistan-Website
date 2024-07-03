@@ -27,7 +27,7 @@ export function HamBurger() {
       <SheetContent>
           <div className="grid gap-4 py-4">
             {/* HamBurger Menu Navigation Options */}
-          <div className="grid grid-rows-4 items-center gap-4 text-lg text-green-950 p-1 font-semibold">
+          <div className="grid grid-rows-4 items-center gap-4 text-lg text-green-900 p-1 font-semibold">
            <Link href="/" className="hover:bg-gray-100/50 p-2">Home</Link>
            <Link href="/About" className="hover:bg-gray-100/50 p-2">About</Link>
            <Link href="/Visit" className="hover:bg-gray-100/50 p-2">Visit</Link>
