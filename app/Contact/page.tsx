@@ -1,38 +1,33 @@
+
 import React from 'react';
 
 const Contact = () => {
     return (
-        <main className='w-full mt-40 flex-col items-center justify-center'>
-        <form className="bg-green-950 shadow-md rounded-md w-full p-4 md:p-12 md:max-w-3xl md:mx-auto flex flex-col items-center gap-y-2 md:gap-y-4">
-<h2 className='text-3xl md:text-4xl text-white font-bold'>Contact Me</h2>
-<div className='flex gap-x-2'>
-   <label className='text-white text-lg font-semibold'>
-    Full Name</label>
-    <input type="text" placeholder="Enter your Name" className='text-white text-md text-center text-whitebg-white h-8 w-72 rounded-md border border-green-900' required/> 
-</div>
-<div className='flex gap-x-2'>
-   <label className='text-white text-lg  font-semibold'>
-    Email Address</label>
-    <input type="email" placeholder="Enter your Email" className='text-white text-md text-center text-whitebg-white h-8 w-72 rounded-md border border-green-900' required/> 
-</div>
-<div className='flex gap-x-2'>
-   <label className='text-white text-lg font-semibold'>
-    Subject</label>
-    <input type="text" placeholder="Enter Subject ..." className='text-white text-md text-center text-whitebg-white h-8 w-72 rounded-md border border-green-900' required/> 
-</div>
-<div  className='flex gap-x-2'>
-   <label className='text-white text-lg font-semibold'>
-    Message</label>
-    <textarea  placeholder="Enter your message" className='outline-none text-whitebg-white text-lg h-20 w-80 rounded-md border border-gray-500' required/> 
-</div>
-<button type='submit' className="px-5 py-2.5 rounded-md  flex justify-center text-green-950 bg-white hover:bg-gray-100 font-medium text-sm">Send Message</button>
-        </form>
-             </main>
+        <main className='w-full pt-40 pb-40 flex justify-center'>
+            <form className="bg-white shadow-lg rounded-lg w-full p-6 md:p-12 md:max-w-3xl flex flex-col items-center gap-y-6 md:gap-y-8">
+                <h2 className='text-3xl md:text-4xl text-green-700 font-bold'>Contact Me</h2>
+                <div className='flex flex-col md:flex-row gap-y-4 md:gap-x-6'>
+                    <div className='flex flex-col gap-y-2'>
+                        <label className='text-gray-600 text-lg font-medium'>Full Name</label>
+                        <input type="text" placeholder="Enter your Name" className='text-gray-800 bg-gray-100 h-10 w-72 md:w-80 rounded-md border border-gray-300 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required />
+                    </div>
+                    <div className='flex flex-col gap-y-2'>
+                        <label className='text-gray-600 text-lg font-medium'>Email Address</label>
+                        <input type="email" placeholder="Enter your Email" className='text-gray-800 bg-gray-100 h-10 w-72 md:w-80 rounded-md border border-gray-300 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required />
+                    </div>
+                </div>
+                <div className='flex flex-col gap-y-2'>
+                    <label className='text-gray-600 text-lg font-medium'>Subject</label>
+                    <input type="text" placeholder="Enter Subject..." className='text-gray-800 bg-gray-100 h-10 w-full md:w-[36rem] rounded-md border border-gray-300 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required />
+                </div>
+                <div className='flex flex-col gap-y-2'>
+                    <label className='text-gray-600 text-lg font-medium'>Message</label>
+                    <textarea placeholder="Enter your message" className='text-gray-800 bg-gray-100 h-28 w-full md:w-[36rem] rounded-md border border-gray-300 px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required></textarea>
+                </div>
+                <button type='submit' className="px-6 py-3 rounded-md bg-green-500 text-white hover:bg-green-600 font-medium text-lg">Send Message</button>
+            </form>
+        </main>
     );
 }
 
 export default Contact;
-
-
-
-
