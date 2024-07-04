@@ -1,8 +1,9 @@
-
-import React from 'react';
+"use client"
+import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
-
+    const { toast } = useToast();
+    //Handle Submit Function
     async function handleSubmit(event:any) {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -22,7 +23,9 @@ const Contact = () => {
         });
         const result = await response.json();
         if (result.success) {
-            console.log(result);
+            toast({
+                description: "Your message has been sent.",
+              })
         }
     }
 
@@ -41,10 +44,7 @@ const Contact = () => {
                         <input type="email" placeholder="Enter your Email" name='email' className='text-gray-800 bg-gray-100 h-10 w-72 md:w-80 rounded-md border border-gray-300 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required />
                     </div>
                 </div>
-                <div className='flex flex-col gap-y-2'>
-                    <label className='text-gray-600 text-lg font-medium'>Subject</label>
-                    <input type="text" placeholder="Enter Subject..." name='subject' className='text-gray-800 bg-gray-100 h-10 w-full md:w-[36rem] rounded-md border border-gray-300 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required />
-                </div>
+               
                 <div className='flex flex-col gap-y-2'>
                     <label className='text-gray-600 text-lg font-medium'>Message</label>
                     <textarea placeholder="Enter your message" name='message' className='text-gray-800 bg-gray-100 h-28 w-full md:w-[36rem] rounded-md border border-gray-300 px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required></textarea>
