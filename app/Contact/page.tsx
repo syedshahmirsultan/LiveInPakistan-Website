@@ -1,5 +1,6 @@
 "use client"
 import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
 
 const Contact = () => {
     const { toast } = useToast();
@@ -23,7 +24,9 @@ const Contact = () => {
         });
         const result = await response.json();
         if (result.success) {
-            toast({
+            
+        toast({
+                title:"Successfully",
                 description: "Your message has been sent.",
               })
         }
@@ -49,7 +52,8 @@ const Contact = () => {
                     <label className='text-gray-600 text-lg font-medium'>Message</label>
                     <textarea placeholder="Enter your message" name='message' className='text-gray-800 bg-gray-100 h-28 w-full md:w-[36rem] rounded-md border border-gray-300 px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent' required></textarea>
                 </div>
-                <button type='submit' className="px-6 py-3 rounded-md bg-green-500 text-white hover:bg-green-600 font-medium text-lg">Send Message</button>
+                <button type='submit' className="px-6 py-3 rounded-md bg-green-500 text-white hover:bg-green-600 font-medium text-lg">
+                     Send Message</button>
             </form>
         </main>
     );
