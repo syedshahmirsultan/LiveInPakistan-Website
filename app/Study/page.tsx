@@ -316,9 +316,9 @@ const Study = () => {
         <main className=' w-full mt-40'>
         <div className='p-4 md:p-8 gap-y-12 md:gap-y-8'>
             {/* Heading */}
-   <Link href="/Study"> <h1 className="text-green-900 font-extrabold text-4xl md:text-7xl text-center">
+    <h1 className="text-green-900 font-extrabold text-4xl md:text-7xl text-center">
  Top Universities In Pakistan
-    </h1></Link>
+    </h1>
     <p className="text-lg mt-12 text-green-950 break-words">Pakistan has universities ranked among the world's top 1000, such as NUST (400), PIEAS (375), LUMS (651-700), and Aga Khan University (201-250). These institutions are known for quality education and research. The Higher Education Commission (HEC) is working to improve educational standards across the country. Education in Pakistan is progressing, with a focus on technology and innovation. These universities play a crucial role in the country's development and offer opportunities for students to excel globally. You don’t need to worry about learning Urdu (the national language), as all teaching at most of the universities in Pakistan is conducted in English.</p>
    {/* Mapping of universitiesData Array*/}
     <div className="mt-20">
@@ -332,7 +332,7 @@ const Study = () => {
     <p className="text-lg text-green-950 break-words w-[90%] p-2 md:p-8">{item.text}</p>
     <Link href={item.href} className='flex justify-center'> <button className="bg-green-950 hover:bg-green-900 animate-bounce px-5 py-2.5 rounded-md text-center font-semibold text-white">Visit Site</button></Link>
         </div>
-       <Image src={item.imageUrl} alt={item.name} width={550} height={320} className="object-fit mt-4 md:mt-0 rounded-md"/>
+       <Image src={item.imageUrl} alt={item.name} width={620} height={340} className="object-fit mt-4 md:mt-0 rounded-md"/>
             </div></div> 
         )
     })

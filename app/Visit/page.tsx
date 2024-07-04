@@ -135,9 +135,9 @@ const Visit = () => {
         <section className=' w-full mt-40'>
             <div className='p-4 md:p-8 gap-y-12 md:gap-y-8'>
                 {/* Heading */}
-       <Link href="/Visit"> <h1 className="text-green-900 font-extrabold text-4xl md:text-7xl text-center">
+        <h1 className="text-green-900 font-extrabold text-4xl md:text-7xl text-center">
      Places To Visit In Pakistan
-        </h1></Link>
+        </h1>
         <p className="text-lg mt-12 text-green-950 break-words">
         Pakistan, renowned for its breathtaking natural beauty, attracts millions of tourists annually. From the majestic peaks of the Karakoram Range to the serene valleys of Swat and Hunza, Pakistan offers a diverse tapestry of landscapes. Each year, approximately 1.75 million tourists visit Pakistan to explore its rich cultural heritage, ancient archaeological sites like Mohenjo-daro and Taxila, and vibrant cities such as Lahore and Karachi. With hospitality as warm as its weather, Pakistanis welcome travelers seeking adventure, history, and unparalleled scenic vistas year-round.</p>
         
