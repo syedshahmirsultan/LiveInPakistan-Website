@@ -146,7 +146,7 @@ const Visit = () => {
         {
             visitSitesInformation.map((item,index)=> {
                 return (
-            <div key={index} className="mt-24 md:mt-40 gap-y-8 md:gap-y-12">
+            <div key={index} className="pt-24 md:pt-40 gap-y-8 md:gap-y-12">
            <h2 className="text-4xl md:text-5xl font-extrabold text-center text-green-900 ">{item.name}</h2>
            <div className="flex flex-col-reverse gap-y-8 md:justify-between md:flex-row mt-8 md:mt-12">
             <p className="text-lg text-green-950 break-words w-[90%] p-2 md:p-8">{item.text}</p>

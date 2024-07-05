@@ -45,7 +45,7 @@ const lifeData = [
 
 const Life = () => {
     return (
-        <main className='w-full mt-40'>
+        <main className='w-full pt-40'>
             <div className='p-4 md:p-8 flex flex-col gap-y-12 md:gap-y-8'>
                 {/* Heading */}
                     <h1 className="text-green-900 font-extrabold text-5xl md:text-7xl text-center">
