@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const About = () => {
     return (
-        <main className='w-full pt-40'>
+        <main className='w-full pt-16'>
             <div className='p-4 md:p-8 flex flex-col gap-y-12 md:gap-y-8'>
                 {/* Heading */}
                 <Link href="/About">
