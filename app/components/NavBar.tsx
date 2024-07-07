@@ -10,7 +10,7 @@ const NavBar = () => {
 
             <div>
         {/*Logo */}
-<Link href="/"><h1 className="text-white text-2xl md:text-3xl ml-4 font-semibold  tracking-widest ">LiveInPakistan</h1>
+<Link href="/"><h1 className="text-white text-2xl md:text-3xl ml-4 font-semibold tracking-widest ">LiveInPakistan</h1>
 </Link> </div>
             {/*NavBar Navigation Options */}
             <div className='hidden lg:flex lg:gap-x-6 xl:gap-x-10 text-white font-semibold text-xl relative p-1'>

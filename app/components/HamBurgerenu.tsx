@@ -15,11 +15,11 @@ export function HamBurger() {
     <Sheet>
       <SheetTrigger asChild>
         {/* HamBurger Button*/}
-        <Button className="flex lg:hidden ml-20 bg-green-950 hover:bg-green-950 px-3 py-auto">
+        <Button className="flex lg:hidden ml-16 bg-green-950 hover:bg-green-950 px-3 py-auto">
             <RxHamburgerMenu size={26} color="white"  />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="z-50 bg-white">
           <div className="grid gap-4 py-4">
             {/* HamBurger Menu Navigation Options */}
           <div className="grid grid-rows-4  items-center gap-4 text-lg text-green-900 p-1 font-semibold">
