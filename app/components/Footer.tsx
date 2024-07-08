@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { BsFacebook, BsLinkedin } from 'react-icons/bs';
 
-
+//Footer Component Function
 const Footer = () => {
     return (
         <footer className="bg-green-950 text-white mt-10">
@@ -32,9 +32,9 @@ const Footer = () => {
                 </nav>
                 {/* Legal Text */}
                 <div className="mt-8 text-center md:text-left">
-                    <p className="text-gray-200 text-sm">© 2024 - 2030 LiveInPakistan.online. All Rights Reserved.</p>
+                    <p className="text-gray-200 text-sm">© 2024 - 2030 liveinpakistan.online. All Rights Reserved.</p>
                     <p className="text-gray-200 text-sm mt-2">
-                        LiveInPakistan.online is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Country of Pakistan or any government agencies.
+                    liveinpakistan.online is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Country of Pakistan or any government agencies.
                     </p>
                 </div>
             </div>
