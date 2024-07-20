@@ -85,7 +85,7 @@ const Hero = () => {
           src={url}
           layout="fill"
           objectFit="cover"
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+          className={` w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
           priority // Ensures Next.js optimizes image loading
         />
       ))}
