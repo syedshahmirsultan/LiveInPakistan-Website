@@ -20,8 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7248886941446965"
-     crossorigin="anonymous"></script></header>
        <Toaster/>
       <body className={inter.className}><NavBar/>
       <div className="bg-gray-100/50">{children}</div>
