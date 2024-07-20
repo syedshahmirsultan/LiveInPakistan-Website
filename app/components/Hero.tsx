@@ -33,7 +33,6 @@ const Hero = () => {
           src={imagesUrl[currentImageIndex]} 
           width={1000}
           height={500}
-          objectFit="cover"
           className=' transition-opacity ease-in-out duration-1000  w-full h-full md:h-[580px] '
          priority
         />
