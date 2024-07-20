@@ -6,7 +6,7 @@ import { HamBurger } from './HamBurgerenu';
 // NavBar Component Function
 const NavBar = () => {
     return (
-        <nav className="flex lg:gap-x-40 sticky top-0 z-20 xl:gap-x-60 bg-green-950 w-full p-6">
+        <nav className="flex lg:gap-x-40 sticky top-0 z-20 xl:gap-x-60 bg-green-950 w-full p-4 md:p-6">
 
             <div>
         {/*Logo */}
