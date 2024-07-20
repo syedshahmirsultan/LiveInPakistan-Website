@@ -34,7 +34,7 @@ const Hero = () => {
           src={url}
           width={500}
           height={500}
-          className={ object-fit absolute top-0 left-0 w-full h-[200px] md:h-full transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+          className={`object-fit absolute top-0 left-0 w-full h-[200px] md:h-full transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
           priority // Ensures Next.js optimizes image loading
         />
       ))}
