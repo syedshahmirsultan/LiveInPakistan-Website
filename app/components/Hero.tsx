@@ -33,7 +33,9 @@ const Hero = () => {
           src={imagesUrl[currentImageIndex]} 
           width={1000}
           height={500}
-          className=' transition-opacity ease-in-out duration-1000 object-contain md:object-cover w-full h-full md:h-[580px] '
+          objectFit="cover"
+          className=' transition-opacity ease-in-out duration-1000  w-full h-full md:h-[580px] '
+         priority
         />
       </div>
       <div className='absolute w-full h-full inset-20 md:inset-0 bg-black/30  bottom-0 top-0 left-0 right-0   text-center'>
