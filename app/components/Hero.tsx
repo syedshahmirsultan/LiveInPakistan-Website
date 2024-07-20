@@ -34,12 +34,12 @@ const Hero = () => {
           src={url}
           width={500}
           height={500}
-          className={`object-fit md:object-cover absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+          className={`md:object-fit object-cover absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
           priority // Ensures Next.js optimizes image loading
         />
       ))}
       <div className='absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center'>
-        <h1 className="text-4xl md:text-9xl font-extrabold text-white mt-4 md:mt-12 z-50">PAKISTAN</h1>
+        <h1 className="text-4xl md:text-9xl font-extrabold text-white mt-4 md:mt-8 z-50">PAKISTAN</h1>
         <p className='text-white text-2xl md:text-5xl font-medium z-50'>Your adventure begins here</p>
       </div>
     </div>
