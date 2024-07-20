@@ -34,7 +34,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className='overflow-x-hidden'>
          <Toaster/><NavBar/>
       <div className="bg-gray-100/50">{children}</div>
       <Footer/></body>
