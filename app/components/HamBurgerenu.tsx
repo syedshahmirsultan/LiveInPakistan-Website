@@ -15,7 +15,7 @@ export function HamBurger() {
     <Sheet>
       <SheetTrigger asChild>
         {/* HamBurger Button*/}
-        <Button className="flex lg:hidden ml-16 bg-green-950 hover:bg-green-950 px-3 py-auto">
+        <Button className="flex md:hidden ml-16 bg-green-950 hover:bg-green-950 px-3 py-auto">
             <RxHamburgerMenu size={26} color="white"  />
         </Button>
       </SheetTrigger>
