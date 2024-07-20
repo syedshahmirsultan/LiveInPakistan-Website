@@ -26,7 +26,7 @@ const Hero = () => {
   }, [currentImageIndex]);
 
   return (
-    <div className='relative w-full h-[500px] md:h-screen overflow-hidden bg-white'>
+    <div className='relative w-full h-[400px] md:h-screen overflow-hidden bg-white'>
       {imagesUrl.map((url, index) => (
         <Image
           key={url}
