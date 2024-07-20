@@ -20,8 +20,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <Toaster/>
-      <body className={inter.className}><NavBar/>
+      <head>
+        {/* Google AdSense verification code */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-7248886941446965",
+                enable_page_level_ads: true
+              });
+            `,
+          }}
+        />
+      </head>
+      <body className={inter.className}>
+         <Toaster/><NavBar/>
       <div className="bg-gray-100/50">{children}</div>
       <Footer/></body>
     </html>
