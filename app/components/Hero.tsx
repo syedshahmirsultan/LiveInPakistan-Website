@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-
 // Images Url Array
 const imagesUrl = [
  "/images/image1.png",
@@ -28,7 +26,7 @@ const Hero = () => {
   return (
     <div className='relative '>
       <div key={currentImageIndex} className='relative  w-full h-full md:h-[580px]'>
-        <Image
+        <img
           alt="Hero Image"
           src={imagesUrl[currentImageIndex]} 
           width={1000}
