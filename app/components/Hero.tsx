@@ -39,7 +39,7 @@ const Hero = () => {
         />
       ))}
       <div className='absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center'>
-        <h1 className="text-5xl md:text-9xl font-extrabold text-white mt-4 md:mt-6 z-50">PAKISTAN</h1>
+        <h1 className="text-5xl md:text-9xl font-extrabold text-white z-50">PAKISTAN</h1>
         <p className='text-white text-3xl md:text-5xl font-medium z-50'>Your adventure begins here</p>
       </div>
     </div>
