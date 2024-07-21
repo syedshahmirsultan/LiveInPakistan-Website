@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { HamBurger } from './HamBurgerenu';
+import { HamBurger } from './HamBurgerMenu';
 
 
 // NavBar Component Function
