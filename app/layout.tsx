@@ -4,6 +4,8 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import Head from 'next/head';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,20 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Google AdSense verification code */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7248886941446965" crossOrigin="anonymous"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-7248886941446965",
-                enable_page_level_ads: true
-              });
-            `,
-          }}
-        />
-      </head>
+     <Head>
+        <meta name="google-adsense-account" content="ca-pub-7248886941446965" />
+      </Head>
       <body className='overflow-x-hidden'>
         <Toaster /><NavBar />
         <div className="bg-gray-100/50">{children}</div>
