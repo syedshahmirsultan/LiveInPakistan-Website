@@ -4,7 +4,8 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { Toaster } from "@/components/ui/toaster";
-import Head from 'next/head';
+import AdSense from "./components/AdSense";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,9 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head><meta name="google-adsense-account" content="ca-pub-7248886941446965"></head>
+ <head>
+        <AdSense pId="ca-pub-7248886941446965"/>
+      </head>     
       <body className='overflow-x-hidden'>
-             
         <Toaster /><NavBar />
         <div className="bg-gray-100/50">{children}</div>
         <Footer />
