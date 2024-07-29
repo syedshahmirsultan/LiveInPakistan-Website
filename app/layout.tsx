@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
  <head>
-        <AdSense pId="ca-pub-7248886941446965"/>
+        <AdSense/>
       </head>     
       <body className='overflow-x-hidden'>
         <Toaster /><NavBar />
