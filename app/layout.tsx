@@ -21,10 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <Head>
-        <meta name="google-adsense-account" content="ca-pub-7248886941446965" />
-      </Head>
       <body className='overflow-x-hidden'>
+             <meta name="google-adsense-account" content="ca-pub-7248886941446965">
         <Toaster /><NavBar />
         <div className="bg-gray-100/50">{children}</div>
         <Footer />
